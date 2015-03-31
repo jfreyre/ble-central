@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OUB-1h-KXO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bzM-Ka-dGK">
+            <objects>
+                <viewController id="OUB-1h-KXO" customClass="ViewController" customModule="CustomBLE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XJu-B0-ABy"/>
+                        <viewControllerLayoutGuide type="bottom" id="0UG-lk-zqA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CsA-yA-kDW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27n-Ia-5vd">
+                                <rect key="frame" x="275" y="33" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rescan:" destination="OUB-1h-KXO" eventType="touchUpInside" id="VXo-9I-aPa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAn-gc-rej">
+                                <rect key="frame" x="243" y="235" width="114" height="30"/>
+                                <state key="normal" title="Write Something">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="writeSomething:" destination="OUB-1h-KXO" eventType="touchUpInside" id="F6s-xo-7F7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAT-hX-UnX">
+                                <rect key="frame" x="242" y="135" width="115" height="30"/>
+                                <state key="normal" title="Read Something">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readSomething:" destination="OUB-1h-KXO" eventType="touchUpInside" id="Mjb-D2-22u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgn-GI-uDH">
+                                <rect key="frame" x="224" y="185" width="153" height="30"/>
+                                <state key="normal" title="Read Something Long">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readSomethingLong:" destination="OUB-1h-KXO" eventType="touchUpInside" id="mUP-wJ-v7X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZAn-gc-rej" firstAttribute="top" secondItem="IAT-hX-UnX" secondAttribute="bottom" constant="70" id="047-T0-iTk"/>
+                            <constraint firstItem="mgn-GI-uDH" firstAttribute="top" secondItem="IAT-hX-UnX" secondAttribute="bottom" constant="20" id="5ZT-JH-UMN"/>
+                            <constraint firstItem="ZAn-gc-rej" firstAttribute="trailing" secondItem="IAT-hX-UnX" secondAttribute="trailing" id="P6k-En-isa"/>
+                            <constraint firstItem="ZAn-gc-rej" firstAttribute="top" secondItem="mgn-GI-uDH" secondAttribute="bottom" constant="20" id="atJ-Je-tBO"/>
+                            <constraint firstItem="27n-Ia-5vd" firstAttribute="centerX" secondItem="CsA-yA-kDW" secondAttribute="centerX" id="cWt-pk-Kgb"/>
+                            <constraint firstAttribute="centerX" secondItem="mgn-GI-uDH" secondAttribute="centerX" id="d4F-1z-QZ5"/>
+                            <constraint firstItem="IAT-hX-UnX" firstAttribute="top" secondItem="27n-Ia-5vd" secondAttribute="bottom" constant="72" id="fTp-qm-1Wt"/>
+                            <constraint firstItem="27n-Ia-5vd" firstAttribute="top" secondItem="XJu-B0-ABy" secondAttribute="bottom" constant="13" id="rJa-W2-J78"/>
+                            <constraint firstItem="ZAn-gc-rej" firstAttribute="centerX" secondItem="27n-Ia-5vd" secondAttribute="centerX" id="sPk-tc-z0b"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEX-QB-Bg8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="-314"/>
+        </scene>
+    </scenes>
+</document>
